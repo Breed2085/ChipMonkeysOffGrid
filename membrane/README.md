@@ -30,7 +30,7 @@ Made from **SAC (Strong Acid Cation) resin** — the beads that **sink** in brin
 
 **How it works:** The resin has sulfonic acid groups (-SO₃H) bonded to the polymer. These groups carry a permanent negative charge. That fixed negative charge attracts positive ions and repels negative ones — like a bouncer at a club that only lets certain people through the door.
 
-**Real-world analogy:** Think of a screen door that only lets warm air out but blocks bugs from coming in. The mesh is the physical barrier, but it's selective — some things pass, others don't. The cation diode film is selective at the ionic level — positive charges pass, negative charges bounce off.
+**Real-world analogy:** Think of a screen door that only lets warm air out but blocks cold air from coming in. The mesh is the physical barrier, but it's selective — some things pass, others don't. The cation diode film is selective at the ionic level — positive charges pass, negative charges bounce off.
 
 **Used in:** Flow battery cells, SEM cells
 
