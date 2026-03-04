@@ -2,7 +2,7 @@
 
 **Open-source off-grid power, water purification, and homestead systems built entirely from hardware store materials.**
 
-We're moving to Tennessee to homestead and we need to solve three problems: store power, purify water, and do it all without a monthly bill. Everything here is designed to be built by one person in a garage with a 3D printer, a propane torch, and a trip to Home Depot. No specialty lab equipment. No Nafion membranes. No $200/liter vanadium electrolyte.
+We've got dreams of a homestead where we can live off grid — and that means solving three problems: store power, purify water, and do it all without a monthly bill. Everything here is designed to be built by one person in a garage with a 3D printer, a propane torch, and a trip to Home Depot. No specialty lab equipment. No Nafion membranes. No $200/liter vanadium electrolyte.
 
 Can we pull it off with table salt, scrap iron, and PVC cement? Yeah. We got this.
 
@@ -129,7 +129,7 @@ There are two types:
 - **Cation diode film** — passes positive ions (H⁺, Fe²⁺, Na⁺, Ca²⁺), blocks negative ions and electrons. Think of a turnstile that only lets people with a blue wristband through. Made from **SAC resin** (the beads that sink in brine).
 - **Anion diode film** — passes negative ions (Cl⁻, SO₄²⁻, NO₃⁻), blocks positive ions and electrons. Same turnstile, but now it only lets red wristbands through. Made from **SBA resin** (the beads that float in brine).
 
-Both are made from the same bag of mixed bed DI resin beads — the exact same beads used in aquarium water filters. Separate the two types with a brine float, grind them up, mix 50/50 with PVC cement, paint onto landscape fabric. Based entirely on [Rowow's](https://youtube.com/@Rowow) open-source technique. This replaces Nafion ($500-1,000/m²) with a diode film that costs about $0.10 per cell from hardware store materials.
+Both are made from the same bag of mixed bed DI resin beads — the exact same beads used in water softener systems. Separate the two types with a brine float, grind them up, mix 50/50 with PVC cement, paint onto landscape fabric. Based entirely on [Rowow's](https://youtube.com/@Rowow) open-source technique. This replaces Nafion ($500-1,000/m²) with a diode film that costs about $0.10 per cell from hardware store materials.
 
 Full fabrication process: [membrane/](membrane/)
 
@@ -193,7 +193,7 @@ This project wouldn't exist without the open-source work and inspiration of thes
 
 **YouTube: [ChipMonkeys Off Grid](https://youtube.com/@ChipMonkeysOffGrid)**
 
-Follow the entire journey from first test cell to full Tennessee homestead power system. Every build step documented. Every failure shown. Every file free.
+Follow the entire journey from first test cell to a full off-grid power system. Every build step documented. Every failure shown. Every file free.
 
 ---
 
@@ -203,10 +203,11 @@ Follow the entire journey from first test cell to full Tennessee homestead power
 
 Everything is open source — build it yourself from the files here. Or buy a kit with pre-measured, pre-ground materials and save yourself the prep time:
 
-- **Materials Kit** ($25-40) — Pre-measured resin, graphite, charcoal, fabric
-- **Pre-made MEAs** ($10-15 each) — Cast, torched, ready to glue into your boxes
-- **Assembled Cells** ($30-50) — Complete, just add electrolyte
-- **Electrolyte Concentrate** ($20-30/gal) — Ready to dilute and use
+- **Materials Kit** ($35) — Pre-measured resin, charcoal, fabric, PVC cement, cornstarch, and glue
+- **Pre-made MEAs** ($12 each) — Cast, torched, ready to glue into your boxes
+- **Assembled Cells** ($40) — Printed, sealed, leak-tested — just add electrolyte
+- **Electrolyte Concentrate** ($25/gal) — Ready to dilute and use
+- **Complete Starter Kit** ($99) — Everything in one box. 4 cells, electrolyte, pump, wiring. Build in an hour.
 
 ---
 
@@ -224,9 +225,13 @@ This project involves acid, solvents, open flame, and gas generation. Respect th
 
 ## License
 
-**CERN Open Hardware License v2 — Strongly Reciprocal (CERN-OHL-S-2.0)**
+**Dual License — Personal Free / Commercial 10% Royalty**
 
-You can build, modify, and sell hardware based on these designs. If you distribute modified versions, you must share your changes under the same license. That's the deal — keep it open.
+**Personal use is free.** Build it, modify it, teach a class, fork the repo — no license needed.
+
+**Commercial use requires a license.** If you sell kits, components, or products based on these designs, you pay a 10% royalty on revenue. Free to sign up. Self-reported quarterly. All royalties go back into the project. Apply at [monkeybusinessmanager.com/offgrid/license](https://monkeybusinessmanager.com/offgrid/license).
+
+See [LICENSE](LICENSE) for full terms.
 
 ## Contributing
 

@@ -23,4 +23,4 @@ Don't be a jerk. Help each other. Share what you learn. This is open source — 
 
 ## License
 
-All contributions are licensed under CERN-OHL-S v2. By submitting a PR, you agree to license your contribution under the same terms.
+All contributions fall under the project's dual license (personal use free, commercial use requires 10% royalty). By submitting a PR, you agree to license your contribution under the same terms. See [LICENSE](LICENSE) for details.
