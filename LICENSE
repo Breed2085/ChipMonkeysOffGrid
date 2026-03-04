@@ -1,18 +1,104 @@
-CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)
+ChipMonkeys Off Grid — Dual License
 
-Copyright (c) 2026 ChipMonkeys Inc.
+Copyright (c) 2026 ChipMonkeys Inc. All rights reserved.
 
-This source describes Open Hardware and is licensed under the CERN-OHL-S v2.
+This project uses a dual licensing model:
 
-You may redistribute and modify this source and make products using it under
-the terms of the CERN-OHL-S v2 (https://ohwr.org/cern_ohl_s_v2.txt).
+================================================================================
+PERSONAL USE — FREE (No License Required)
+================================================================================
 
-This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY,
-INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A
-PARTICULAR PURPOSE. Please see the CERN-OHL-S v2 for applicable conditions.
+You may freely use, modify, and build from these designs for personal,
+educational, and non-commercial purposes. This includes:
 
-Source location: https://github.com/ChipMonkeysOffGrid
+  - Building batteries for your own use
+  - Building for friends, family, or neighbors (no charge)
+  - Teaching workshops or classes (free/educational only)
+  - Forking, modifying, and sharing your modifications
+  - Academic research and experimentation
 
-As per CERN-OHL-S v2 section 4, should You produce hardware based on this
-source, You must where practicable maintain the Source Location visible on
-the external case of the hardware or other products you make using this source.
+No attribution is required for personal use, though it is appreciated.
+Link back to https://github.com/Breed2085/ChipMonkeysOffGrid if you share
+your modifications.
+
+================================================================================
+COMMERCIAL USE — License Required (10% Royalty)
+================================================================================
+
+Commercial use of these designs requires a Commercial Kit-Seller License
+from ChipMonkeys Inc.
+
+"Commercial use" means any activity where money changes hands and these
+designs (or derivatives of these designs) are the product or a substantial
+component of the product being sold. This includes but is not limited to:
+
+  - Selling kits, components, or assembled systems
+  - Selling pre-made membranes, electrodes, or electrolyte
+  - Selling modified or improved versions of these designs
+  - Offering paid workshops where these designs are the primary content
+  - Including these designs in a product sold by a third party
+
+LICENSE TERMS:
+
+  1. REGISTRATION: Apply at https://monkeybusinessmanager.com/offgrid/license
+     Registration is free. All applications are reviewed by ChipMonkeys Inc.
+
+  2. ROYALTY: 10% of gross revenue from all products that incorporate or are
+     based on ChipMonkeys Off Grid designs. Revenue means total sales, not
+     profit. Royalties are due quarterly.
+
+  3. DOCUMENTATION: Licensees must maintain a log of all orders (date,
+     customer, amount) and make this log available to ChipMonkeys Inc.
+     upon request.
+
+  4. ATTRIBUTION: Products and product listings must include the statement:
+     "Based on ChipMonkeys Off Grid designs — chipmonkeysinc.com/offgrid"
+
+  5. ROYALTY PURPOSE: All royalties collected are directed toward the
+     furtherment of the ChipMonkeys Off Grid project — R&D, documentation,
+     tooling, and community development.
+
+================================================================================
+ENFORCEMENT
+================================================================================
+
+This is an honor system. We trust the community. But the designs in this
+repository are copyrighted works of ChipMonkeys Inc. and this license is
+legally binding.
+
+If you are found to be profiting from these designs without a commercial
+license and without paying the required royalties:
+
+  - ChipMonkeys Inc. will pursue legal action to the fullest extent of
+    the law.
+  - This includes recovery of ALL profits derived from unauthorized use,
+    statutory damages, and attorney's fees.
+  - We will seek injunctive relief to stop unauthorized sales immediately.
+
+Don't test us on this. Just sign up, pay the 10%, and build something great.
+The royalty funds the project that makes your business possible.
+
+================================================================================
+NO WARRANTY
+================================================================================
+
+These designs are provided "AS IS" without warranty of any kind, express or
+implied, including but not limited to warranties of merchantability, fitness
+for a particular purpose, or non-infringement. ChipMonkeys Inc. is not
+liable for any damages arising from the use of these designs.
+
+These are prototype-stage designs for experimental battery systems. They
+involve chemicals (hydrochloric acid, ferrous chloride) that require proper
+safety precautions. You assume all risk.
+
+================================================================================
+CONTACT
+================================================================================
+
+  ChipMonkeys Inc.
+  brandon@chipmonkeysinc.com
+  https://chipmonkeysinc.com/offgrid
+  https://github.com/Breed2085/ChipMonkeysOffGrid
+
+  Commercial License Applications:
+  https://monkeybusinessmanager.com/offgrid/license
