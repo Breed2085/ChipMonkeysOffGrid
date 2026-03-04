@@ -1,0 +1,21 @@
+# Fusion 360 temp files
+*.f3d~
+*.f3z~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+*.gcode
+*.3mf
+
+# Secrets
+.env
+*.env
+credentials*
