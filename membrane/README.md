@@ -10,9 +10,62 @@ This guide is written to be followed on camera for YouTube Episode 4.
 
 ## What You're Making
 
-An ion exchange membrane that passes ions (H⁺, Fe²⁺) but blocks electrons. This is the wall between the two half-cells of the battery. Without it, the cell short-circuits. With it, electrons are forced through the external circuit — that's your usable electricity.
+An ion exchange membrane — we call these **diode films**. Just like a diode in electronics only lets current flow one direction, a diode film only lets specific ions pass through while blocking everything else. It's a one-way valve at the molecular level.
+
+In the battery, the diode film passes ions (H⁺, Fe²⁺) but blocks electrons. This is the wall between the two half-cells. Without it, the cell short-circuits. With it, electrons are forced through the external circuit — that's your usable electricity.
 
 Commercial ion exchange membranes (Nafion) cost $500-1,000 per square meter. This one costs about **$0.10 per cell** from materials you can buy at a pet store and Home Depot.
+
+---
+
+## Diode Films — Cation vs Anion
+
+There are two types of diode films, and we make both from the same bag of mixed bed resin beads.
+
+### Cation Diode Film (CEM — Cation Exchange Membrane)
+
+Made from **SAC (Strong Acid Cation) resin** — the beads that **sink** in brine.
+
+**What it does:** Only lets **positive ions** through. Hydrogen ions (H⁺), iron ions (Fe²⁺, Fe³⁺), sodium (Na⁺), calcium (Ca²⁺) — anything with a positive charge can pass. Negative ions and electrons are blocked.
+
+**How it works:** The resin has sulfonic acid groups (-SO₃H) bonded to the polymer. These groups carry a permanent negative charge. That fixed negative charge attracts positive ions and repels negative ones — like a bouncer at a club that only lets certain people through the door.
+
+**Real-world analogy:** Think of a screen door that only lets warm air out but blocks bugs from coming in. The mesh is the physical barrier, but it's selective — some things pass, others don't. The cation diode film is selective at the ionic level — positive charges pass, negative charges bounce off.
+
+**Used in:** Flow battery cells, SEM cells
+
+### Anion Diode Film (AEM — Anion Exchange Membrane)
+
+Made from **SBA (Strong Base Anion) resin** — the beads that **float** in brine.
+
+**What it does:** Only lets **negative ions** through. Chloride (Cl⁻), sulfate (SO₄²⁻), nitrate (NO₃⁻) — anything with a negative charge can pass. Positive ions and electrons are blocked.
+
+**How it works:** The resin has quaternary ammonium groups (-NR₃⁺) bonded to the polymer. These carry a permanent positive charge. That fixed positive charge attracts negative ions and repels positive ones — the opposite bouncer.
+
+**Real-world analogy:** Same screen door concept, but it only lets bugs out and blocks the warm air. Selective in the opposite direction.
+
+**Used in:** Electrodialysis water purification (alternating with cation films)
+
+### The Diode Analogy
+
+In electronics, a diode lets current flow in one direction but blocks it in the other. Our diode films do the same thing for ions:
+
+```
+ELECTRONIC DIODE:    Current → [DIODE] → passes
+                     Current ← [DIODE] ← BLOCKED
+
+CATION DIODE FILM:   (+) ions → [CEM] → passes
+                     (-) ions → [CEM] → BLOCKED
+
+ANION DIODE FILM:    (-) ions → [AEM] → passes
+                     (+) ions → [AEM] → BLOCKED
+```
+
+Both types block electrons completely. That's critical — if electrons could pass through the membrane, the battery would short-circuit internally.
+
+### Why "Diode Film"?
+
+The industry calls these "ion exchange membranes" or "ion selective membranes." We call them diode films because that's what they are — and because it makes the concept instantly click for anyone who's ever seen a diode. You don't need a chemistry degree to understand "it lets one thing through and blocks the other."
 
 ---
 
@@ -50,10 +103,10 @@ Mixed bed DI resin contains two types of beads mixed together. We need to separa
 2. **Add resin beads.** Pour a batch of mixed bed resin into the brine. Stir vigorously for 30 seconds, then stop and wait 5-10 minutes.
 
 3. **Watch them separate.**
-   - **Cation beads (SAC) SINK** — density 1.25-1.30 g/mL. These are heavier than the brine. These are what we want for battery membranes.
-   - **Anion beads (SBA) FLOAT** — density 1.04-1.08 g/mL. These are lighter than the brine. Save these for electrodialysis (ED) water purification membranes later.
+   - **Cation beads (SAC) SINK** — density 1.25-1.30 g/mL. These are heavier than the brine. These make cation diode films for the battery and SEM cells.
+   - **Anion beads (SBA) FLOAT** — density 1.04-1.08 g/mL. These are lighter than the brine. These make anion diode films for electrodialysis (ED) water purification.
 
-4. **Skim the floaters.** Use the slotted spoon to scoop the floating anion beads off the top. Put them in a separate container labeled "ANION — for ED."
+4. **Skim the floaters.** Use the slotted spoon to scoop the floating anion beads off the top. Put them in a separate container labeled "ANION — for ED diode films."
 
 5. **Collect the sinkers.** Drain off the brine and collect the cation beads that sank to the bottom. These are your membrane material.
 
@@ -189,17 +242,35 @@ The PVC cement in the electrode mix chemically welds to the PVC cement in the me
 
 ## How It Works — The Science
 
+### Why It's a Diode
+
+Think about what a diode really does. An electronic diode has a P-N junction — the P side has fixed negative charges (acceptor atoms), and the N side has fixed positive charges (donor atoms). Mobile charges can only cross in one direction because the fixed charges create a one-way gate.
+
+A cation diode film works the same way. The sulfonic acid groups (-SO₃H) on the SAC resin are **fixed negative charges** permanently bonded to the polymer. They can't move. When the film swells in water, those fixed negative charges:
+- **Attract and pass** positive ions (H⁺, Fe²⁺) — they hop from one sulfonic acid group to the next through the membrane
+- **Repel and block** negative ions (Cl⁻, SO₄²⁻) — the fixed negative charges push them away
+
+This is called **Donnan exclusion** — the same principle that makes an electronic diode work, applied to ions instead of electrons.
+
+An anion diode film is the reverse. The quaternary ammonium groups (-NR₃⁺) are fixed positive charges that attract negative ions and repel positive ones. Same diode principle, opposite polarity.
+
 ### Ion Exchange Resin
 
-SAC (Strong Acid Cation) resin beads are polystyrene beads with **sulfonic acid groups** (-SO₃H) bonded to the polymer surface. These groups are what make the beads useful for water deionization — they grab cations (positive ions) out of the water.
+SAC (Strong Acid Cation) resin beads are polystyrene beads with **sulfonic acid groups** (-SO₃H) bonded to the polymer surface. In water deionization (like in aquarium filters), these groups grab cations (positive ions) out of the water and replace them with H⁺ — that's the "ion exchange" part. In our diode film, we're using these same groups as a selective gate rather than an exchanger.
 
-When you grind the beads into powder and bind them with PVC cement, the sulfonic acid groups are still active. When the membrane swells in water or acid electrolyte, the sulfonic acid groups create **ion-conducting pathways** through the PVC matrix. H⁺ and Fe²⁺ ions hop from one sulfonic acid group to the next, passing through the membrane.
+When you grind the beads into powder and bind them with PVC cement, the sulfonic acid groups are still active. When the diode film swells in water or acid electrolyte, the sulfonic acid groups create **ion-conducting pathways** through the PVC matrix. H⁺ and Fe²⁺ ions hop from one sulfonic acid group to the next, passing through the film.
+
+### Real-World Example: Aquarium Filters
+
+If you've ever used a DI (deionized) water filter for an aquarium or a car wash spotless rinse system, you've already used this exact resin. Those filters are packed with the same mixed bed resin beads we're buying. The beads pull dissolved minerals out of tap water — calcium, magnesium, iron, chloride — leaving pure water behind.
+
+We're taking those same beads, separating the two types, grinding them up, and painting them into films. Instead of pulling ions out of water passing through a tube of loose beads, our diode films selectively pass or block ions across a flat barrier. Same chemistry, different geometry, completely different application.
 
 ### Why It Works Even With 50% PVC Binder
 
-Rowow proved that even with thick fiberglass mat and a 50/50 resin/PVC ratio, the membrane conducts ions well enough to work. This tells us the SAC resin is **extremely conductive** when swollen — even with half the volume being insulating PVC binder, there are enough resin particles touching each other to form continuous ion pathways.
+Rowow proved that even with thick fiberglass mat and a 50/50 resin/PVC ratio, the diode film conducts ions well enough to work. This tells us the SAC resin is **extremely conductive** when swollen — even with half the volume being insulating PVC binder, there are enough resin particles touching each other to form continuous ion pathways through the film.
 
-The membrane is NOT the performance bottleneck in this system. The electrode surface area is. That's why we put our innovation effort into the electrode (popcorn balls) and keep the membrane recipe simple and proven.
+The diode film is NOT the performance bottleneck in this system. The electrode surface area is. That's why we put our innovation effort into the electrode (popcorn balls) and keep the diode film recipe simple and proven.
 
 ---
 

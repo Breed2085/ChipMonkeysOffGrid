@@ -65,7 +65,7 @@ Two identical 3D-printed ASA boxes glued face-to-face onto a flat membrane elect
 │  │  └─────────────────────────────┘  │  │
 │  └───────────────────────────────────┘  │
 ├─────────────────────────────────────────┤
-│          MEMBRANE (ion gate)            │
+│     CATION DIODE FILM (ion gate)        │
 │   landscape fabric + SAC resin + PVC    │
 ├─────────────────────────────────────────┤
 │  ┌───────────────────────────────────┐  │
@@ -120,11 +120,16 @@ Full recipe and process: [electrode/](electrode/)
 
 ---
 
-## The Membrane — Rowow Method
+## The Diode Films — Rowow Method
 
-Based entirely on [Rowow's](https://youtube.com/@Rowow) open-source ion exchange membrane technique. Ground commodity ion exchange resin beads (the same ones used in aquarium water filters) mixed 50/50 with PVC cement, painted onto landscape fabric. The sulfonic acid groups on the resin particles swell in water and form ion-conducting pathways through the PVC matrix.
+We call our ion exchange membranes **diode films** because they work exactly like a diode in electronics — they let specific things through in one direction and block everything else. Just like a diode is a one-way valve for electrical current, a diode film is a one-way valve for ions.
 
-This replaces Nafion ($500-1,000/m²) with a membrane that costs about $0.10 per cell from hardware store materials.
+There are two types:
+
+- **Cation diode film** — passes positive ions (H⁺, Fe²⁺, Na⁺, Ca²⁺), blocks negative ions and electrons. Think of a turnstile that only lets people with a blue wristband through. Made from **SAC resin** (the beads that sink in brine).
+- **Anion diode film** — passes negative ions (Cl⁻, SO₄²⁻, NO₃⁻), blocks positive ions and electrons. Same turnstile, but now it only lets red wristbands through. Made from **SBA resin** (the beads that float in brine).
+
+Both are made from the same bag of mixed bed DI resin beads — the exact same beads used in aquarium water filters. Separate the two types with a brine float, grind them up, mix 50/50 with PVC cement, paint onto landscape fabric. Based entirely on [Rowow's](https://youtube.com/@Rowow) open-source technique. This replaces Nafion ($500-1,000/m²) with a diode film that costs about $0.10 per cell from hardware store materials.
 
 Full fabrication process: [membrane/](membrane/)
 
@@ -142,7 +147,7 @@ Full details: [electrolyte/](electrolyte/) | [sem-cell/](sem-cell/)
 
 ## Water Purification — Electrodialysis
 
-Same Rowow membrane technique, different resin type (anion beads instead of cation). Alternating membranes in an electric field pull ions out of water. Combined with activated charcoal channels and UV sterilization: **complete drinking water system for $100-150** vs $1,500-4,000 conventional.
+Same Rowow diode film technique, but now we use BOTH types — alternating cation and anion diode films in an electric field. Positive ions get pulled through the cation films one direction, negative ions get pulled through the anion films the other direction, and clean water is left behind. Combined with activated charcoal channels and UV sterilization: **complete drinking water system for $100-150** vs $1,500-4,000 conventional.
 
 Full details: [ed-water/](ed-water/)
 

@@ -2,7 +2,7 @@
 
 **A complete guide to building a $100-150 drinking water purification system from Rowow membranes and hardware store materials.**
 
-Remove dissolved metals, salts, minerals, and contaminants from well water or creek water using electricity and ion exchange membranes — the same membranes used in the flow battery.
+Remove dissolved metals, salts, minerals, and contaminants from well water or creek water using electricity and diode films — the same films used in the flow battery, plus the anion version.
 
 This guide is written to be followed on camera for YouTube Episode 10.
 
@@ -10,7 +10,9 @@ This guide is written to be followed on camera for YouTube Episode 10.
 
 ## What You're Building
 
-An electrodialysis (ED) system that pulls ions (dissolved metals, salts, minerals) out of water using an electric field and alternating membranes. Combined with activated charcoal filtration and UV sterilization, this is a complete drinking water system.
+An electrodialysis (ED) system that pulls ions (dissolved metals, salts, minerals) out of water using an electric field and alternating **diode films**. Combined with activated charcoal filtration and UV sterilization, this is a complete drinking water system.
+
+We call ion exchange membranes "diode films" because they work like a diode — each one only lets specific ions pass through while blocking everything else. A one-way valve at the molecular level. Full explanation in the [membrane guide](../membrane/).
 
 **Total cost: $100-150** vs $1,500-4,000 for conventional well water treatment systems.
 
@@ -20,12 +22,14 @@ An electrodialysis (ED) system that pulls ions (dissolved metals, salts, mineral
 
 ### The Basics
 
-Imagine a stack of alternating cation and anion membranes with water flowing between them. Apply an electric field across the stack:
+Imagine a stack of alternating cation and anion diode films with water flowing between them. Apply an electric field across the stack. Each diode film acts like a one-way valve — cation films only let positive ions through, anion films only let negative ions through.
 
-- **Cation membranes (SAC):** Pass positive ions (Na⁺, Ca²⁺, Fe²⁺, Mg²⁺) toward the cathode
-- **Anion membranes (SBA):** Pass negative ions (Cl⁻, SO₄²⁻, NO₃⁻, HCO₃⁻) toward the anode
+The electric field provides the driving force — it pulls positive ions toward the cathode and negative ions toward the anode. But the diode films control WHICH direction each ion can actually move:
 
-Between each pair of membranes, ions get pulled out of the "dilute" channel (your clean water) and pushed into the "concentrate" channel (waste brine).
+- **Cation diode film (CEM):** Only lets positive ions through (Na⁺, Ca²⁺, Fe²⁺, Mg²⁺) — like a turnstile that only opens for blue wristbands
+- **Anion diode film (AEM):** Only lets negative ions through (Cl⁻, SO₄²⁻, NO₃⁻, HCO₃⁻) — same turnstile, but for red wristbands
+
+Between each pair of diode films, ions get pulled out of the "dilute" channel (your clean water) and trapped in the "concentrate" channel (waste brine). The films act as one-way gates — ions can enter the concentrate channel but can't get back out.
 
 ```
           CATHODE (-)                              ANODE (+)
@@ -34,15 +38,15 @@ Between each pair of membranes, ions get pulled out of the "dilute" channel (you
             │         │           │           │      │
   ┌─────────┼─────────┼───────────┼───────────┼──────┼─────────┐
   │  CONC   │  CEM    │  DILUTE   │   AEM     │ CONC │  CEM    │
-  │ (waste) │(cation) │  (clean)  │ (anion)   │(waste)│(cation) │
-  │         │membrane │  water    │ membrane  │      │membrane │
+  │ (waste) │(cation  │  (clean)  │ (anion    │(waste)│(cation  │
+  │         │ diode)  │  water    │  diode)   │      │ diode)  │
   └─────────┼─────────┼───────────┼───────────┼──────┼─────────┘
             │         │           │           │      │
             │               Cl⁻ →   SO₄²⁻ →         │
             │                                        │
 
-CEM = Cation Exchange Membrane (SAC resin — same as battery)
-AEM = Anion Exchange Membrane (SBA resin — the floaters from brine separation)
+CEM = Cation Diode Film (SAC resin — same as battery)
+AEM = Anion Diode Film (SBA resin — the floaters from brine separation)
 ```
 
 ### Key Advantages Over Reverse Osmosis
@@ -72,20 +76,21 @@ Scale buildup (calcium carbonate, iron deposits) is the enemy of all water treat
 
 ---
 
-## Membrane Types — Using Both Resin Batches
+## Diode Film Types — Using Both Resin Batches
 
-Remember the brine float separation from the [membrane guide](../membrane/)? The sinkers (SAC/cation beads) go into battery membranes. The floaters (SBA/anion beads) are used HERE.
+Remember the brine float separation from the [membrane guide](../membrane/)? The sinkers (SAC/cation beads) go into cation diode films for the battery. The floaters (SBA/anion beads) are used HERE for anion diode films.
 
-| Membrane Type | Resin Used | Passes | Color (typical) |
-|---------------|-----------|--------|-----------------|
-| Cation Exchange (CEM) | SAC (sinkers) | Positive ions (Na⁺, Ca²⁺, Fe²⁺) | Amber/dark |
-| Anion Exchange (AEM) | SBA (floaters) | Negative ions (Cl⁻, SO₄²⁻) | Light/clear |
+| Diode Film Type | Resin Used | What It Passes | What It Blocks | Color (typical) |
+|-----------------|-----------|----------------|----------------|-----------------|
+| Cation (CEM) | SAC (sinkers) | Positive ions (Na⁺, Ca²⁺, Fe²⁺) | Negative ions, electrons | Amber/dark |
+| Anion (AEM) | SBA (floaters) | Negative ions (Cl⁻, SO₄²⁻) | Positive ions, electrons | Light/clear |
 
-**Fabrication is identical** for both types — 50/50 resin powder + PVC cement, painted onto landscape fabric. The only difference is which resin you grind up.
+**Fabrication is identical** for both types — 50/50 resin powder + PVC cement, painted onto landscape fabric. The only difference is which resin you grind up. Same recipe, opposite selectivity — like making two diodes with reversed polarity.
 
 ### On Camera
 - Show the two resin batches side by side — "the sinkers for batteries, the floaters for water purification"
-- "Same technique, same PVC cement, different resin — and now we purify water"
+- "Same recipe, different beads — one makes a positive-ion diode, the other makes a negative-ion diode"
+- "Together they sort ions out of your drinking water like a coin sorter separates quarters from dimes"
 
 ---
 

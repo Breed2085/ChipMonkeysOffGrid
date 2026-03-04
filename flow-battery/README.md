@@ -24,9 +24,13 @@ Fe⁰ → Fe²⁺ + 2e⁻    (discharge — metal dissolves back)
 **Cell voltage:** ~1.2V open circuit, ~1.0-1.1V under load
 **Round-trip efficiency:** 70-80%
 
+### The Diode Film (Membrane)
+
+The wall between the two half-cells is a **cation diode film** — we call it that because it works like a diode in electronics. It only lets positive ions (H⁺, Fe²⁺) pass through while blocking electrons. This forces the electrons to take the long way around through the external circuit — and that's your usable electricity. Without this one-way ion gate, the cell would just short-circuit internally. Full explanation of cation vs anion diode films: [membrane/](../membrane/)
+
 ### Why All-Iron Is Self-Healing
 
-Both sides use the same base electrolyte. If Fe²⁺ ions cross the membrane (membrane crossover), they just end up in the other tank — still usable, no permanent damage. Vanadium flow batteries permanently lose capacity from crossover. All-iron doesn't care. This is why a DIY membrane works here when it wouldn't work for vanadium.
+Both sides use the same base electrolyte. If Fe²⁺ ions cross the diode film (membrane crossover), they just end up in the other tank — still usable, no permanent damage. Vanadium flow batteries permanently lose capacity from crossover. All-iron doesn't care. This is why a DIY diode film works here when it wouldn't work for vanadium.
 
 ---
 
