@@ -85,18 +85,20 @@ Every interior surface is coated with the [popcorn ball electrode mix](../electr
 
 ---
 
-## Cell Specs
+## Cell Specs (Estimated — Testing in Progress)
 
 | Parameter | 50mm Test Cell | 300mm Production |
 |-----------|---------------|-----------------|
 | Active area | 25 cm² | 900 cm² |
-| Power per cell @ 50mA/cm² | ~1.25W | ~49W |
-| Power per cell @ 80mA/cm² | ~2W | ~79W |
+| Estimated power per cell @ 50mA/cm² | ~1.25W | ~49W |
+| Estimated power per cell @ 80mA/cm² | ~2W | ~79W |
 | Materials cost per cell | ~$0.72 | ~$5-8 |
 | Print time (0.2mm layers) | ~10 min | ~45-60 min |
 | Printer | VzBot 400 | VzBot 400 |
 
-**Demo target:** 4 cells × 1.2V = 4.8V stack → boost converter → charges a phone. Stack powers its own peristaltic pump (~0.5W) with power to spare.
+*Power estimates based on cell chemistry and dimensions at theoretical current densities. Real-world numbers coming as we test.*
+
+**Demo target:** 4 cells × 1.2V = ~4.8V stack → boost converter → charges a phone. Stack should power its own peristaltic pump (~0.5W) with power to spare.
 
 ---
 

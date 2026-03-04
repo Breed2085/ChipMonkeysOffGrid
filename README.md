@@ -87,16 +87,18 @@ Two identical 3D-printed ASA boxes glued face-to-face onto a flat membrane elect
 - **Terminals in the sealed zone:** Threaded holes in the box wall overlap the mesh in the glued/sealed zone — screws bite into the stainless screen but never penetrate the electrolyte cavity. Zero leak path at the terminals.
 - **Open pocket with charcoal fill:** No serpentine maze channels. The charcoal granules create micro-turbulence and provide massive electrode surface area. The charcoal IS the flow distributor.
 
-### Cell Specs
+### Cell Specs (Estimated — Testing in Progress)
 
 | Parameter | 50mm Test Cell | 300mm Production |
 |-----------|---------------|-----------------|
 | Active area | 25 cm² | 900 cm² |
-| Power per cell @ 50mA/cm² | ~1.25W | ~49W |
-| Power per cell @ 80mA/cm² | — | ~79W |
+| Estimated power per cell @ 50mA/cm² | ~1.25W | ~49W |
+| Estimated power per cell @ 80mA/cm² | — | ~79W |
 | Materials cost per cell | ~$0.72 | ~$5-8 |
 | Print time (0.2mm layers) | ~10 min | ~45-60 min |
 | Both sizes print on | VzBot 400 (400mm bed) | VzBot 400 |
+
+*Power estimates are based on cell chemistry and dimensions at theoretical current densities. Real-world performance will be documented on the [YouTube channel](https://youtube.com/@ChipMonkeysOffGrid) as we test.*
 
 **Phase 1 target:** 4 cells at 50mm = self-sustaining stack that powers its own pump and charges a phone. Total BOM: ~$150.
 
