@@ -103,8 +103,7 @@ Remember the brine float separation from the [membrane guide](../membrane/)? The
 | Landscape fabric (non-woven PP) | Home Depot | ~$15 | [Amazon](https://www.amazon.com/dp/B0BQD91HH9?tag=chipmonkeysof-20) |
 | Activated charcoal (granular) | Pet store / Amazon | ~$8/lb | [Amazon](https://www.amazon.com/dp/B01GN7ZQ70?tag=chipmonkeysof-20) |
 | Graphite electrodes (2) | Amazon | ~$5-10 | [Amazon](https://www.amazon.com/s?k=graphite+electrode+rod&tag=chipmonkeysof-20) |
-| HDPE or acrylic sheets (for stack frame) | Hardware store | ~$10-15 | — |
-| Silicone gasket sheet or O-rings | Amazon | ~$5-10 | [Amazon](https://www.amazon.com/s?k=silicone+gasket+sheet&tag=chipmonkeysof-20) |
+| ASA filament 1.75mm (stack frames) | Amazon | ~$22/kg | [Amazon](https://www.amazon.com/dp/B09DKPYYBP?tag=chipmonkeysof-20) |
 | 12V DC power supply (1-3A) | Amazon | ~$10 | [Amazon](https://www.amazon.com/s?k=12v+dc+power+supply+3a&tag=chipmonkeysof-20) |
 | UV-C sterilization lamp | Amazon | ~$30-50 | [Amazon](https://www.amazon.com/s?k=uv-c+water+sterilizer&tag=chipmonkeysof-20) |
 | TDS meter (total dissolved solids) | Amazon | ~$10-15 | [Amazon](https://www.amazon.com/s?k=tds+meter+water&tag=chipmonkeysof-20) |
@@ -190,54 +189,106 @@ A "cell pair" = one CEM + one AEM + one dilute channel + one concentrate channel
 
 ---
 
-## Step 2: Build the Stack Frame
+## Step 2: Print the Stack Frames
+
+Everything is 3D printed in ASA, same as the flow battery cells. PVC cement welds all the joints. No acrylic, no sheet cutting, no bolted plate stacks.
 
 ### What you need
-- HDPE or acrylic sheet (for end plates and spacers)
-- Silicone gasket material or O-rings
-- Threaded rods and nuts (for compression)
-- Graphite electrodes (one per end plate)
+- ASA filament (same as flow battery boxes)
+- PVC cement (clear)
+- Graphite electrodes (one per end cap)
+
+### The Parts — Three Printed Pieces
+
+The entire ED stack is built from just three types of printed parts:
+
+**1. Double Diode Film Holder (the repeating cell pair unit)**
+
+This is the key part. A printed frame with two parallel slots that each hold one diode film. Between the two films is a flow channel (concentrate or dilute). The landscape fabric overhang from each diode film gets PVC cemented into the slot — same sealing approach as the flow battery membrane.
+
+```
+┌─────────────────────────────────┐
+│     DOUBLE DIODE FILM HOLDER    │
+│  ┌───────────────────────────┐  │
+│  │ CEM diode film (slot 1)  │  │
+│  ├───────────────────────────┤  │
+│  │   Flow channel            │  │  ← charcoal-filled
+│  │   (dilute OR concentrate) │  │
+│  ├───────────────────────────┤  │
+│  │ AEM diode film (slot 2)  │  │
+│  └───────────────────────────┘  │
+│  ○ inlet port    ○ outlet port  │
+└─────────────────────────────────┘
+```
+
+Each holder has:
+- Two parallel membrane slots with lips for PVC cement sealing
+- A flow cavity between the films (3-5mm deep, filled with granular activated charcoal)
+- Inlet and outlet ports for vinyl tubing (1/4" ID, same as flow battery)
+- Alignment features so holders stack and register precisely
+
+**2. End Cap with Electrode (two needed — cathode and anode)**
+
+Printed caps that close off each end of the stack. Each has:
+- A graphite electrode pocket (rod or plate sits in a printed recess)
+- A flow channel next to the electrode
+- Terminal connection (same sealed-zone thread design as the flow battery)
+- Inlet/outlet ports
+
+**3. Manifold Header (optional)**
+
+A printed manifold that distributes water to all dilute channels and separately to all concentrate channels. Same PVC-pipe-with-vinyl-branches approach as the flow battery, or a fully printed manifold.
 
 ### Stack Assembly Order
 
-For a 3-cell-pair test stack:
+For a 3-cell-pair test stack, you just stack the holders between end caps:
 
 ```
-END PLATE (cathode + graphite electrode)
-  Gasket
-    CEM (cation membrane)
-      Spacer + charcoal (CONCENTRATE channel)
-    AEM (anion membrane)
-      Spacer + charcoal (DILUTE channel — clean water)
-    CEM
-      Spacer + charcoal (CONCENTRATE channel)
-    AEM
-      Spacer + charcoal (DILUTE channel)
-    CEM
-      Spacer + charcoal (CONCENTRATE channel)
-    AEM
-      Spacer + charcoal (DILUTE channel)
-    CEM
-  Gasket
-END PLATE (anode + graphite electrode)
+END CAP (cathode + graphite electrode + concentrate channel)
+  ┬
+  │  PVC cement bond
+  ┴
+DOUBLE HOLDER #1  [CEM | dilute channel + charcoal | AEM]
+  ┬
+  │  PVC cement bond
+  ┴
+SINGLE SPACER     [concentrate channel + charcoal]
+  ┬
+  │  PVC cement bond
+  ┴
+DOUBLE HOLDER #2  [CEM | dilute channel + charcoal | AEM]
+  ┬
+  │  PVC cement bond
+  ┴
+SINGLE SPACER     [concentrate channel + charcoal]
+  ┬
+  │  PVC cement bond
+  ┴
+DOUBLE HOLDER #3  [CEM | dilute channel + charcoal | AEM]
+  ┬
+  │  PVC cement bond
+  ┴
+END CAP (anode + graphite electrode + concentrate channel)
 ```
 
-### Spacer Design
+**Want more cell pairs? Print more double holders and spacers.** Same STL, same print, just stack more. The design is parametric in Fusion 360 — change the channel dimensions and everything scales.
 
-Spacers create the flow channels between membranes. Options:
+### Why Print Instead of Cut Sheets?
 
-1. **Simple:** Cut frames from HDPE sheet with open centers. Fill centers with granular activated charcoal. Thickness: 3-5mm.
-
-2. **3D Printed (ASA):** Print frames with internal flow distribution features. PVC cement bonds ASA to the membrane edges for a sealed channel.
-
-3. **Corrugated PP sheet:** Cheap, creates turbulence. Cut to fit between membranes.
-
-Each spacer has inlet and outlet holes for water manifolding.
+| | Cut HDPE/Acrylic Sheets | 3D Printed ASA |
+|---|---|---|
+| Tooling | Drill press, saw, sanding | Just a printer |
+| Precision | Hand-cut tolerance | 0.2mm layer precision |
+| Flow features | None (flat sheets) | Printed flow guides, turbulence features |
+| Sealing | Bolts + gaskets + compression | PVC cement chemical weld (same as battery) |
+| Reproducibility | Every one is different | Identical every print |
+| Scaling | Redesign for each size | Change one parameter |
 
 ### On Camera
-- Show the stack being assembled layer by layer
-- "CEM, spacer, AEM, spacer — that pattern repeats for as many cell pairs as you want"
-- Show the charcoal being poured into spacer channels
+- Show the printed parts coming off the VzBot
+- Assembly sequence — "holder, cement, spacer, cement, holder — that's it"
+- "Same ASA, same PVC cement, same approach as the battery cells — everything in this project bonds the same way"
+- Show charcoal being poured into the channels between films
 
 ---
 
