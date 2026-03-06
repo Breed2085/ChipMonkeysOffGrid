@@ -2,6 +2,8 @@
 
 **A novel electrode fabrication method for flow batteries using hardware store materials.**
 
+This electrode is designed to bond directly to the membrane from the [membrane guide](../membrane/).
+
 Inspired by [Night Hawk in Light's](https://youtube.com/@NightHawkInLight) intumescent coating and Starlite demonstrations. Pyrolysis concepts informed by [Cody's Lab](https://youtube.com/@CodysLab).
 
 ---

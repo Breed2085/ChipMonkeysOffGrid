@@ -16,6 +16,23 @@ In the battery, the diode film passes ions (H⁺, Fe²⁺) but blocks electrons.
 
 Commercial ion exchange membranes (Nafion) cost $500-1,000 per square meter. This one costs about **$0.10 per cell** from materials you can buy at a pet store and Home Depot.
 
+> **Quick version:** For a condensed step-by-step checklist without the theory, see [Wet-to-Finish Quick Reference](./WET-TO-FINISH.md).
+
+### Timeline at a Glance
+
+| Step | Description | Time |
+|------|-------------|------|
+| 0 | Receive and rinse wet beads | 10 min |
+| 1 | Brine float separation | 30 min active, 15-30 min settling |
+| 2a | Dry cation beads | 2-48 hrs (method dependent) |
+| 2b | Grind dried beads | 10-15 min |
+| 3 | Mix membrane slurry | 10-15 min |
+| 4 | Cast membrane | 15 min active, 24 hrs cure |
+| 5 | Apply popcorn ball electrode | 15 min active, 24 hrs cure per side |
+| — | **Total** | **~3-5 days** (or ~2 days with oven drying) |
+
+The two 24-hour cure times are the bottleneck. Plan to cast on day 1, apply electrodes on day 2, and assemble into cells on day 3.
+
 ---
 
 ## Diode Films — Cation vs Anion
@@ -79,9 +96,31 @@ The industry calls these "ion exchange membranes" or "ion selective membranes." 
 | Dedicated spice grinder | Amazon | ~$15 | [Amazon](https://www.amazon.com/dp/B07SYTRPSG?tag=chipmonkeysof-20) |
 | Table salt, 1 lb | Grocery | ~$1 | — |
 | Large bowl or bucket | — | — | — |
+| Fine mesh strainer or paint strainer bags | Hardware store | ~$3 | — |
+| Parchment paper | Grocery | ~$4 | — |
+| Multimeter (for conductivity test) | Amazon | ~$15 | — |
 | Flat surface + clamps | — | — | — |
 
 *As an Amazon Associate I earn from qualifying purchases.*
+
+---
+
+## Step 0: Receive and Rinse Wet Beads
+
+Mixed-bed ion exchange resin ships wet in a sealed bag. The beads are saturated with water and feel slippery, like small wet tapioca pearls. This is normal.
+
+### Procedure
+
+1. **Open the bag** and pour the beads into a fine mesh strainer or colander lined with a paint strainer bag.
+2. **Rinse under tap water** for 30 seconds to remove any shipping preservatives or fines.
+3. **Drain** for 5 minutes.
+
+The beads are now ready for separation. You do not need to dry them first — wet beads separate just fine in the brine float.
+
+**Time:** 5-10 minutes.
+
+### On camera
+Show the bag being opened, the wet bead texture close-up, and the rinse in the strainer. Viewers need to see what "normal" wet beads look like so they don't think something is wrong.
 
 ---
 
@@ -114,6 +153,8 @@ Mixed bed DI resin contains two types of beads mixed together. We need to separa
 
 7. **Repeat** if separation wasn't clean — do another float cycle on each batch. 2-3 cycles gets you to 98%+ purity.
 
+**Note:** Wet beads straight from the rinse separate fine. The density difference between cation and anion beads is large enough that the float works without drying first. Allow 15-30 minutes for the separation to fully settle.
+
 ### On camera
 - Show the beads going in (they're usually different colors — makes great footage)
 - Close-up of the separation happening in real time
@@ -121,16 +162,39 @@ Mixed bed DI resin contains two types of beads mixed together. We need to separa
 
 ---
 
-## Step 2: Grind the Cation Beads
+## Step 2: Dry and Grind the Cation Beads
 
-### What you need
-- Separated cation (SAC) beads, dry
+### Why drying matters
+
+Wet beads will clog a coffee grinder or mortar, produce a paste instead of a powder, and result in clumpy membrane slurry. The beads must be dry enough to shatter, not squish.
+
+### Drying methods
+
+**Method A — Air dry (simplest):** Spread separated cation beads in a single layer on a cookie sheet lined with parchment paper. Place in a well-ventilated area or in front of a fan. Time: 24-48 hours depending on humidity.
+
+**Method B — Fan-assisted:** Same as above but with a box fan blowing directly across the tray. Time: 12-24 hours.
+
+**Method C — Low oven:** Spread beads on a parchment-lined sheet. Set oven to lowest setting (170-200°F / 75-95°C). Leave door cracked for moisture escape. Stir every 30 minutes. Time: 2-4 hours. **Caution:** do not exceed 200°F or the resin may begin to thermally degrade and discolor.
+
+### How to tell when dry enough
+
+Pick up a few beads and press between your fingers. Dry beads are hard, click against each other, and shatter when pressed with a spoon on a hard surface. Wet beads are rubbery, compress without breaking, and stick to each other.
+
+**What happens if you grind wet beads:** You get a sticky paste that won't pass through a sieve and will create uneven membrane thickness. If this happens, spread the paste thin and dry it out, then re-grind.
+
+### On camera (drying)
+Do the finger-press test on camera. Show a dry bead shattering vs a wet bead compressing. This is the most common failure point for first-timers.
+
+**Time:** 2-48 hours depending on method chosen.
+
+### What you need (grinding)
+- Separated cation (SAC) beads, **dry**
 - Dedicated electric spice grinder (NEVER use for food again — resin dust)
-- Eye protection (fine dust)
+- Eye protection and dust mask (fine dust)
 
-### Procedure
+### Grinding procedure
 
-1. **Dry the beads.** Spread them on a paper towel or baking sheet. Let air dry or use a fan. They need to be dry or they'll gum up the grinder.
+1. **Confirm beads are dry** using the finger-press test above.
 
 2. **Grind in small batches.** Fill the grinder about 1/3 full. Pulse 10-15 seconds, check consistency, repeat until you have fine powder.
 
@@ -240,6 +304,60 @@ The PVC cement in the electrode mix chemically welds to the PVC cement in the me
 
 ---
 
+## Quality Checks and Inspection
+
+Before installing the membrane in a cell, run these three checks. They take 2 minutes and save you from building a dead cell.
+
+### Visual inspection
+
+- The cured membrane should be uniform in color and thickness. Hold it up to a light — you should not see pinholes or thin spots that let light through more than the surrounding area.
+- Surface should be matte, not glossy. Glossy spots indicate areas where the binder pooled and resin coverage is thin.
+- Edges should be smooth. Cracks at the edges mean the cure was too fast (too much heat, too little humidity).
+
+### Flex test
+
+Gently flex the membrane between your fingers. It should bend without cracking. A properly cured membrane has some flexibility — not brittle like a cracker and not floppy like wet paper. Think of the flex of a thick credit card or a piece of gasket material.
+
+If it cracks: too little binder, or the binder dried out before wetting the resin. Consider this membrane scrap. Grind it up and re-use the resin powder in a new batch if you want to reclaim materials.
+
+### Simple conductivity test (optional but recommended)
+
+1. Soak a small piece of finished membrane in the electrolyte solution (or plain tap water) for 10 minutes.
+2. Set a multimeter to resistance mode (ohms).
+3. Press the probes against opposite faces of the wet membrane, about 1 cm apart.
+4. **Expected results:** Wet membrane should read in the low kilohm range (1-50 kΩ depending on thickness and electrolyte). Dry membrane will read open circuit or megohms — this is normal and does not indicate a problem.
+5. If the wet membrane reads open circuit: the resin may not be properly distributed. This membrane will have high internal resistance and poor cell performance.
+
+### Defect guide
+
+| Defect | Action |
+|--------|--------|
+| Pinholes | Scrap. Electrolyte will crossover and short the cell. |
+| Edge cracks only, center intact | Trim the cracked edges. Usable if the active area is undamaged. |
+| Uneven thickness | Usable but may cause uneven current distribution. Face the thicker side toward the positive electrolyte. |
+| Small surface bubbles (< 2mm) | Cosmetic. OK to use. |
+| Large bubbles through full thickness | These are pinholes — scrap. |
+
+### On camera
+Show the light test, the flex test, and the multimeter test side by side. These three checks take 2 minutes and save you from building a dead cell.
+
+---
+
+## What "Finished" Means
+
+The membrane is not finished when you peel it off the casting surface. At that point it is a bare membrane.
+
+A **finished membrane-electrode assembly (MEA)** consists of:
+1. The ion-exchange membrane (this guide)
+2. Popcorn ball electrodes bonded to both faces (see [electrode guide](../electrode/))
+3. Current collector screens pressed into the electrode surface
+
+The MEA is "done" when both electrode layers are fully cured (24 hours each side), the current collector screens are embedded, and the assembly is ready to be glued or gasket-sealed into a cell box.
+
+For cell box assembly, see the flow battery cell guide (coming soon).
+
+---
+
 ## How It Works — The Science
 
 ### Why It's a Diode
@@ -298,3 +416,7 @@ This is how you'd produce membranes for kit sales — batch the casting, individ
 | Cell has internal short | Carbon contamination in membrane | Remake — keep carbon materials AWAY from membrane mixing |
 | Low ionic conductivity | Resin not ground fine enough | Grind longer, finer powder |
 | Slurry sets too fast | PVC cement evaporating | Work faster, or add a tiny amount of MEK/acetone to extend working time |
+| Beads won't separate in brine | Brine concentration too low | Add more salt until you see clear separation. Fresh wet beads may need slightly higher brine concentration |
+| Ground resin is clumpy/pasty | Beads not dry enough before grinding | Spread the paste on parchment, dry it out (oven method, 2 hrs), then re-grind |
+| Membrane cracked during cure | Cured too fast | Next time, cure in a humid environment — cover loosely with plastic wrap for the first 4 hours, then remove |
+| Multimeter reads open circuit on wet membrane | Resin not properly distributed, or wrong bead type used | Verify you separated cation from anion correctly. Cation beads are the ones that sink in brine |
